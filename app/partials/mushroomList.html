@@ -8,7 +8,7 @@
     <section>
         <div ng-repeat="item in shrooms | filter:query | filter:type">
             <a href="#/item/{{item.name}}">{{item.name}}</a>
-            <p>{{item.description}}</p>
+            <p><b>Description:</b> {{item.description}}</p>
         </div>
     </section>
 
