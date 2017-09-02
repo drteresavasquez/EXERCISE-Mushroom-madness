@@ -9,7 +9,7 @@ app.controller("MushroomCtrl", function ($scope, MushroomDirectory) {
             shrooms.forEach((item) => {
                 shroomArray.push(shroomCollection[item]);
             });
-            console.log("mushroomArray", shroomArray);
+            console.log("shroomCollection", shroomCollection);
             $scope.shrooms = shroomArray;
         });
 
