@@ -1,0 +1,15 @@
+<article class="shroom-list">
+    <input ng-model="query" placeholder="this is text" autofocus><br>
+    <input type="radio" ng-model="type" value="true"> Non-poisonous<br>
+    <input type="radio" ng-model="type" value="false"> Poisonous
+    <header>
+        <h1>List of Shrooms</h1>
+    </header>
+    <section>
+        <div ng-repeat="item in shrooms | filter:query | filter:type">
+            <a href="#/item/{{item.name}}">{{item.name}}</a>
+            <p>{{item.description}}</p>
+        </div>
+    </section>
+
+</article>
